@@ -14,8 +14,7 @@ services:
     restart: unless-stopped
 
   backup:
-    build: .
-    image: fradelg/mysql-cron-backup
+    image: registry.rad.app.br/docker-mysql-cron-backup
     depends_on:
       - mariadb
     volumes:
